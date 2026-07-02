@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kolkata Bus Rentals </title>
+    <title>Gitanjali Travel </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -90,7 +90,8 @@
   <body class="bg-gray-100">
     <!----banner -->
     <div
-      class="relative w-full bg-top bg-cover bg-no-repeat bg-[url('assets/images/banner_bus.png')]"
+      id="main-banner"
+      class="relative w-full bg-top bg-cover bg-no-repeat transition-all duration-500 bg-[url('assets/images/banner_bus.png')]"
     >
       <!-- Black overlay -->
       <div class="absolute inset-0 bg-black/50"></div>
@@ -105,21 +106,21 @@
             <!-- Left: phone + email -->
             <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
               <a
-                href="tel:+91xxxxxxxxxx"
+                href="tel:+91 6291142203"
                 class="flex items-center gap-2 text-[#11819D] hover:text-[#0c6177]"
               >
                 <i class="fa-solid fa-phone"></i>
                 <span class="text-gray-200 text-sm sm:text-base rakkas-text"
-                  >+91xxxxxxxxxx</span
+                  >+91 6291142203</span
                 >
               </a>
               <a
-                href="mailto:info@kolkatabusrentals.in"
+                href="mailto:Gitanjalitravels2@gmail.com"
                 class="flex items-center gap-2 text-[#11819D] hover:text-[#0c6177]"
               >
                 <i class="fa-solid fa-envelope"></i>
                 <span class="text-gray-200 text-sm sm:text-base rocknroll"
-                  >info@kolkatabusrentals.in</span
+                  >Gitanjalitravels2@gmail.com</span
                 >
               </a>
             </div>
@@ -127,24 +128,24 @@
             <!-- Right: social icons -->
             <div class="flex space-x-4">
               <a
-                href="https://www.pinterest.com/kolkatabusrentals/"
+                href="#"
                 class="w-[35px] h-[35px] border-2 border-[#11819D] flex justify-center items-center rounded-full text-gray-200"
               >
 <i class="fab fa-pinterest-p"></i>              </a>
               <a
-                href="https://www.facebook.com/kolkatabusrentals/"
+                href="#"
                 class="w-[35px] h-[35px] border-2 border-[#11819D] flex justify-center items-center rounded-full text-gray-200"
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
-                href="https://www.linkedin.com/company/kolkata-bus-rentals/"
+                href="#"
                 class="w-[35px] h-[35px] border-2 border-[#11819D] flex justify-center items-center rounded-full text-gray-200"
               >
                 <i class="fab fa-linkedin-in"></i>
               </a>
               <a
-                href="https://www.instagram.com/kolkatabusrentals/"
+                href="#"
                 class="w-[35px] h-[35px] border-2 border-[#11819D] flex justify-center items-center rounded-full text-gray-200"
               >
                 <i class="fab fa-instagram"></i>
@@ -175,7 +176,7 @@
             >
               <!-- Logo -->
               <div class="flex items-center space-x-2 px-6 py-3">
-                <span class="text-white text-xl sm:text-2xl font-bold uppercase tracking-wider">kolkata bus</span>
+                <span class="text-white text-xl sm:text-2xl font-bold uppercase tracking-wider">Gitanjali Travel</span>
               </div>
 
               <!-- Nav Links - Desktop -->
@@ -200,7 +201,7 @@
                   Book Now
                 </a>
                 <a
-                  href="https://kolkatabusrentals.co.uk/"
+                  href="https://#/"
                   class="border border-[#11819D] text-sm sm:text-base rakkas-text px-4 sm:px-6 py-2 rounded-full hover:bg-[#11819D] hover:text-white whitespace-nowrap"
                 >
                   Main Website
@@ -246,7 +247,7 @@
                   Book Now
                 </a>
                 <a
-                  href="https://kolkatabusrentals.co.uk/"
+                  href="https://#/"
                   class="border border-[#11819D] text-white rakkas-text px-6 py-2 rounded-full text-center hover:bg-[#11819D] hover:text-white"
                 >
                   Main Website
@@ -275,7 +276,7 @@
                 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4 rocknroll"
               >
                 Luxury Bus Hire in <br />
-                <span class="text-[#15a3c7]"> Kolkata, India</span>
+                <span class="text-[#15a3c7]"> Kolkata, West Bengal</span>
               </h2>
               <div class="mt-6 flex items-center">
                 <span
@@ -284,7 +285,7 @@
                   <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
                 </span>
                 <a
-                  href="tel:+91xxxxxxxxxx"
+                  href="tel:+91 6291142203"
                   class="inline-flex items-center border-[2px] rakkas-text border-white text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] transition text-sm sm:text-base"
                 >
                   Call Now
@@ -300,91 +301,79 @@
             <div class="swiper-wrapper">
               <!-- Card 1 -->
               <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/wedding_bus.png')]"
+                onclick="changeMainBanner('assets/images/gangasagar_banner.png')"
+                class="swiper-slide cursor-pointer relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/gangasagar_banner.png')]"
               >
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div
                   class="absolute rocknroll bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
                 >
                   <span class="rocknroll text-sm sm:text-base"
-                    >Wedding Bus
+                    >Ganga Sagar
                   </span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
+              <!-- Card 2 -->
               <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/airport_bus.png')]"
+                onclick="changeMainBanner('assets/images/mandarmani_banner.png')"
+                class="swiper-slide cursor-pointer relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/mandarmani_banner.png')]"
               >
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
+                  class="absolute rocknroll bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
                 >
                   <span class="rocknroll text-sm sm:text-base"
-                    >Airport Transfer Bus</span
-                  >
+                    >Mandarmani
+                  </span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
+              <!-- Card 3 -->
               <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/party_bus.png')]"
+                onclick="changeMainBanner('assets/images/puri_banner.png')"
+                class="swiper-slide cursor-pointer relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/puri_banner.png')]"
               >
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
+                  class="absolute rocknroll bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
                 >
                   <span class="rocknroll text-sm sm:text-base"
-                    >Birthday Bus Hire</span
-                  >
+                    >Puri
+                  </span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
+              <!-- Card 4 -->
               <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/corporate_bus.png')]"
+                onclick="changeMainBanner('assets/images/purulia_banner.png')"
+                class="swiper-slide cursor-pointer relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/purulia_banner.png')]"
               >
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
+                  class="absolute rocknroll bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
                 >
                   <span class="rocknroll text-sm sm:text-base"
-                    >Bus Hire</span
-                  >
+                    >Purulia
+                  </span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
+              <!-- Card 5 -->
               <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/tour_bus.png')]"
+                onclick="changeMainBanner('assets/images/sunderban_banner.png')"
+                class="swiper-slide cursor-pointer relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/sunderban_banner.png')]"
               >
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
+                  class="absolute rocknroll bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
                 >
-                  <span class="rocknroll text-sm sm:text-base">Picnic Bus</span>
+                  <span class="rocknroll text-sm sm:text-base"
+                    >Sunderbans
+                  </span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
-              <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/tour_bus.png')]"
-              >
-                <div class="absolute inset-0 bg-black/40"></div>
-                <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
-                >
-                  <span class="rocknroll text-sm sm:text-base">City Tour Bus</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </div>
-                            <div
-                class="swiper-slide relative rounded-lg overflow-hidden bg-center bg-cover bg-[url('assets/images/tour_bus.png')]"
-              >
-                <div class="absolute inset-0 bg-black/40"></div>
-                <div
-                  class="absolute bottom-0 left-0 right-0 p-4 text-white flex justify-between items-center"
-                >
-                  <span class="rocknroll text-sm sm:text-base">Vintage Bus</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -575,7 +564,7 @@
           class="absolute -top-6 -left-4 sm:-left-16 w-[250px] sm:w-72 h-[350px] sm:h-[450px] bg-[#11819D47] -z-10"
         ></div>
         <img
-          src="assets/images/driver_bus.png"
+          src="assets/images/indian_driver_gitanjali.png"
           alt="Person with Bus"
           class="rounded-xl h-[300px] w-[300px] sm:h-[450px] sm:w-[400px] shadow-md object-cover"
         />
@@ -609,12 +598,12 @@
           class="text-xl sm:text-2xl lg:text-3xl rocknroll font-bold text-gray-900 leading-snug"
         >
           Premium Bus Services
-          <span class="text-[#11819D]">Across Kolkata, India</span>
+          <span class="text-[#11819D]">Across Kolkata, West Bengal</span>
         </h2>
 
         <p class="text-gray-600 mt-4 rocknroll text-sm sm:text-base">
           we specialize in providing luxury Bus hire across North West
-          Yorkshire. Whether it’s for weddings, corporate travel, airport
+          Yorkshire. Whether itâ€™s for weddings, corporate travel, airport
           transfers, or special events, our goal is to deliver a safe, stylish,
           and unforgettable experience. With professional chauffeurs,
           top-of-the-line Buses, and a commitment to excellence, we make
@@ -654,7 +643,7 @@
             <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
           </span>
           <a
-            href="https://kolkatabusrentals.co.uk/"
+            href="https://#/"
             class="inline-flex rocknroll items-center bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] transition text-xs sm:text-sm lg:text-base"
           >
             VISIT OUR MAIN WEBSITE
@@ -687,12 +676,12 @@
         >
           <h3 class="text-2xl sm:text-3xl lg:text-4xl rocknroll font-bold">
             Luxury Bus Hire Services
-            <span class="text-[#11819D]">in Kolkata, India</span>
+            <span class="text-[#11819D]">in Kolkata, West Bengal</span>
           </h3>
         </div>
       </div>
 
-      <!-- First 3 Cards -->
+      <!-- Visible Cards -->
       <div
         class="w-full flex justify-center pt-[100px] sm:pt-[150px] pb-[0px] sm:pb-[100px]"
       >
@@ -700,269 +689,149 @@
           id="serviceCards"
           class="w-full lg:w-[90%] flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16 px-4"
         >
-          <!-- Card 1 -->
-          <div
-            class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-          >
-            <div
-              class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-            >
-              <img src="assets/images/wedding_bus.png" class="mt-[-80px] w-full" />
-              <h4
-                class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-              >
-                Wedding Bus Hire
+          <!-- Card 1: 13 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/13_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                13 Seater Traveller
               </h4>
               <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                </li>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 13 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Pushback Seats</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> AC / Music System</li>
               </ul>
-
-              <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                <span
-                  class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                >
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
                   <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
                 </span>
-                <a
-                  href="#form"
-                  class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                >
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
                   Book Now
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 2 -->
-          <div
-            class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-          >
-            <div
-              class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-            >
-              <img src="assets/images/airport_bus.png" class="mt-[-80px] w-full" />
-              <h4
-                class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-              >
-                Airport Transfer
+          <!-- Card 2: 15 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/15_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                15 Seater Traveller
               </h4>
               <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                </li>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 15 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Pushback Seats</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Ample Luggage Space</li>
               </ul>
-
-              <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                <span
-                  class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                >
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
                   <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
                 </span>
-                <a
-                  href="#form"
-                  class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                >
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
                   Book Now
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Card 3 -->
-          <div
-            class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-          >
-            <div
-              class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-            >
-              <img src="assets/images/party_bus.png" class="mt-[-80px] w-full" />
-              <h4
-                class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-              >
-                Picnic Bus
+          <!-- Card 3: 17 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/17_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                17 Seater Traveller
               </h4>
               <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                </li>
-                <li class="flex items-center gap-2">
-                  <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                </li>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 17 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Pushback Seats</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Perfect for Tours</li>
               </ul>
-
-              <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                <span
-                  class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                >
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
                   <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
                 </span>
-                <a
-                  href="#form"
-                  class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                >
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
                   Book Now
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- Hidden extra 3 cards -->
-          <div
-            id="moreServices"
-            class="hidden w-full flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16"
-          >
-            <!-- Add your next 3 cards here -->
-            <div
-              class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-            >
-              <div
-                class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-              >
-                <img src="assets/images/limBirth.png" class="mt-[-80px] w-full" />
-                <h4
-                  class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-                >
-                  Birthday Bus Hire
-                </h4>
-                <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-                <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                  </li>
-                </ul>
-
-                <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                  <span
-                    class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                  >
-                    <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
-                  </span>
-                  <a
-                    href="#form"
-                    class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                  >
-                    Book Now
-                  </a>
-                </div>
+          <!-- Card 4: 26 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/26_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                26 Seater Traveller
+              </h4>
+              <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 26 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Comfortable Seating</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Ideal for Group Tours</li>
+              </ul>
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
+                  <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
+                </span>
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
+                  Book Now
+                </a>
               </div>
             </div>
-
-            <!-- Card 2 -->
-            <div
-              class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-            >
-              <div
-                class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-              >
-                <img src="assets/images/tour_bus.png" class="mt-[-80px] w-full" />
-                <h4
-                  class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-                >
-                Bus Hire
-                </h4>
-                <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-                <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                  </li>
-                </ul>
-
-                <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                  <span
-                    class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                  >
-                    <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
-                  </span>
-                  <a
-                    href="#form"
-                    class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <!-- <div
-              class="relative h-[250px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md"
-            >
-              <div
-                class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]"
-              >
-                <img src="assets/images/tour_bus.png" class="mt-[-80px] w-full" />
-                <h4
-                  class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll"
-                >
-                  Picnic Bus
-                </h4>
-                <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
-
-                <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll">
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> 4 passengers
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i> Heated Seats
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check text-[#11819D]"></i>$3.00 Per Hour 
-                    Fuel Surcharges
-                  </li>
-                </ul>
-
-                <div class="mt-6 ml-6 sm:ml-10 flex items-center">
-                  <span
-                    class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center"
-                  >
-                    <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
-                  </span>
-                  <a
-                    href="#form"
-                    class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div> -->
-            <!-- Add two more similar cards -->
           </div>
-        </div>
-      </div>
 
-      <!-- View More / Less Button -->
-      <div class="w-full flex justify-center mt-[-50px] sm:mt-[-130px] px-4">
-        <div class="flex items-center">
-          <button
-            id="toggleBtn"
-            onclick="toggleServices()"
-            class="inline-flex rocknroll items-center bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] transition text-sm sm:text-base"
-          >
-            View More Services
-          </button>
+          <!-- Card 5: 32 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/32_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                32 Seater Bus
+              </h4>
+              <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 32 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Spacious Interiors</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Professional Driver</li>
+              </ul>
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
+                  <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
+                </span>
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: 39 Seater -->
+          <div class="relative h-[290px] w-full sm:w-[320px] bg-[#11819DBA] mt-[10px] mb-[120px] rounded-md">
+            <div class="h-[330px] sm:h-[340px] w-[90%] sm:w-[280px] bg-white absolute mt-[-50px] left-[5%] rounded-md border-[1px] border-[#11819D]">
+              <img src="assets/images/39_seater_traveller.png" class="mt-[-80px] w-full object-cover h-[180px] rounded-t-md" />
+              <h4 class="text-[#11819DBA] text-start px-2 text-lg sm:text-xl font-bold rocknroll mt-2">
+                39 Seater Bus
+              </h4>
+              <div class="w-[120px] h-[1px] bg-[#11819DBA] ml-2"></div>
+              <ul class="px-4 mt-3 space-y-2 text-[#989898] rocknroll text-sm">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> 39 Passengers</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Long Distance</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-[#11819D]"></i> Ample Luggage Space</li>
+              </ul>
+              <div class="mt-4 ml-6 sm:ml-10 flex items-center">
+                <span class="mr-2 border-[2px] absolute bg-white border-[#11819D] rounded-full w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] ml-[-15px] sm:ml-[-20px] flex justify-center items-center">
+                  <i class="fa-solid fa-arrow-right text-black text-xl sm:text-2xl"></i>
+                </span>
+                <a href="#form" class="inline-flex rocknroll items-center ml-[6px] bg-[#11819D] text-white font-medium px-6 sm:px-10 py-2 sm:py-3 rounded-full shadow hover:bg-[#0c6177] hover:text-white transition text-sm sm:text-base">
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1037,7 +906,7 @@
             </h4>
             <p class="text-white rocknroll text-sm mt-2">
               Our skilled and licensed chauffeurs ensure a safe, smooth, and
-              timely ride. They’re polite, professional, and committed to
+              timely ride. Theyâ€™re polite, professional, and committed to
               offering a first-class experience.
             </p>
           </div>
@@ -1049,7 +918,7 @@
               Reliable & Punctual Service
             </h4>
             <p class="text-white rocknroll text-sm mb-2 mt-2">
-              We value your time. Whether it’s a wedding, business trip, or
+              We value your time. Whether itâ€™s a wedding, business trip, or
               airport transfer, our team ensures on-time pick-ups and a smooth.
             </p>
           </div>
@@ -1083,7 +952,7 @@
           Feel Free To <span class="text-[#11819D]">Call Us For Services</span>
         </h3>
         <a
-          href="tel:+91xxxxxxxxxx"
+          href="tel:+91 6291142203"
           class="flex justify-center mt-10 gap-3 sm:gap-5 items-center text-2xl sm:text-3xl lg:text-4xl text-white rakkas-text"
         >
           <div
@@ -1091,7 +960,7 @@
           >
             <i class="fa-solid fa-phone text-[#11819D] text-xl sm:text-2xl"></i>
           </div>
-          +91xxxxxxxxxx
+          +91 6291142203
         </a>
       </div>
     </div>
@@ -1185,7 +1054,7 @@
             <p
               class="text-gray-600 mt-6 relative rocknroll text-sm sm:text-base"
             >
-              Great service from Kolkata Bus Rentals! The Bus was clean, stylish,
+              Great service from Gitanjali Travel! The Bus was clean, stylish,
               and very comfortable. The driver was punctual and professional.
               Booking was smooth and support was helpful
             </p>
@@ -1246,17 +1115,17 @@
             </span>
             <span
               class="text-2xl text-[#11819D] font-bold flex-shrink-0"
-              x-text="open ? '−' : '+'"
+              x-text="open ? 'âˆ’' : '+'"
             ></span>
           </button>
           <div
             x-show="open"
             class="mt-3 rocknroll text-gray-600 text-sm sm:text-base"
           >
-            It’s best to book your Bus at least one to two weeks in
+            Itâ€™s best to book your Bus at least one to two weeks in
             advance, especially for weddings or special events. However, we also
             accept last-minute bookings depending on vehicle availability across
-           Kolkata, India.
+           Kolkata, West Bengal.
           </div>
         </div>
 
@@ -1273,7 +1142,7 @@
             </span>
             <span
               class="text-2xl text-[#11819D] font-bold flex-shrink-0"
-              x-text="open ? '−' : '+'"
+              x-text="open ? 'âˆ’' : '+'"
             ></span>
           </button>
           <div
@@ -1299,7 +1168,7 @@
             </span>
             <span
               class="text-2xl text-[#11819D] font-bold flex-shrink-0"
-              x-text="open ? '−' : '+'"
+              x-text="open ? 'âˆ’' : '+'"
             ></span>
           </button>
           <div
@@ -1308,7 +1177,7 @@
           >
             Yes, all our chauffeurs are fully licensed, insured, and
             professionally trained. They ensure a smooth, safe, and luxurious
-            travel experience for every client in and around Kolkata, India.
+            travel experience for every client in and around Kolkata, West Bengal.
           </div>
         </div>
       </div>
@@ -1325,7 +1194,7 @@
           <!-- Logo + Description + Socials -->
           <div class="w-full sm:w-[45%] lg:w-[30%] text-white">
             <div class="text-2xl sm:text-3xl font-bold">
-              <span class="text-white uppercase tracking-wider">kolkata bus</span>
+              <span class="text-white uppercase tracking-wider">Gitanjali Travel</span>
             </div>
             <p class="mt-2 rocknroll text-sm sm:text-base">
               Experience premium Bus hire across North  West Yorkshire with
@@ -1380,16 +1249,16 @@
                 <i class="fas fa-map-marker-alt mr-2 text-[#11819D]"></i>2
                 Complete North, West, East and South Yorkshire & Surroundings
               </li>
-              <a href="mailto:info@kolkatabusrentals.in" class="mt-3">
+              <a href="mailto:Gitanjalitravels2@gmail.com" class="mt-3">
                 <li class="mb-4">
                   <i class="fas fa-envelope mr-2 text-[#11819D]"></i
-                  >info@kolkatabusrentals.in
+                  >Gitanjalitravels2@gmail.com
                 </li>
               </a>
-              <a href="tel:+91xxxxxxxxxx" class="mt-3">
+              <a href="tel:+91 6291142203" class="mt-3">
                 <li>
                   <i class="fas fa-phone-alt mr-2 text-[#11819D] skel-[-1]"></i
-                  >+91xxxxxxxxxx
+                  >+91 6291142203
                 </li>
               </a>
             </ul>
@@ -1423,8 +1292,8 @@
           class="w-full xl:w-[90%] flex flex-col sm:flex-row justify-center gap-4 text-sm sm:text-base"
         >
           <p class="text-white rocknroll">
-            © 2025 All Rights Reserved
-            <b class="text-[#11819D]">Kolkata Bus </b>
+            Â© 2025 All Rights Reserved
+            <b class="text-[#11819D]">Gitanjali Travel </b>
           </p>
          
           </p>
@@ -1500,6 +1369,21 @@
             spaceBetween: 20,
           },
         },
+        on: {
+          slideChange: function () {
+            var bgImages = [
+              'assets/images/gangasagar_banner.png',
+              'assets/images/mandarmani_banner.png',
+              'assets/images/puri_banner.png',
+              'assets/images/purulia_banner.png',
+              'assets/images/sunderban_banner.png'
+            ];
+            var imgUrl = bgImages[this.realIndex];
+            if (imgUrl) {
+              document.getElementById('main-banner').style.backgroundImage = "url('" + imgUrl + "')";
+            }
+          }
+        }
       });
     </script>
 
@@ -1524,8 +1408,14 @@
     });
   }
 </script>
+    <script>
+      function changeMainBanner(imageUrl) {
+        document.getElementById('main-banner').style.backgroundImage = "url('" + imageUrl + "')";
+      }
+    </script>
   </body>
 <script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sxb1plzcpnl505580'},{'dcenter':'sxb1'},{'cp_id':'10764813'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+
 
 
 
